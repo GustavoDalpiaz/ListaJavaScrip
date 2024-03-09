@@ -1,0 +1,24 @@
+function intercalarPalavras() {
+  var palavra1 = document.getElementById('palavra1').value;
+  var palavra2 = document.getElementById('palavra2').value;
+
+  var resultado = intercalar(palavra1, palavra2);
+
+  document.getElementById('resultado').value = resultado;
+}
+
+function intercalar(palavra1, palavra2) {
+  var resultado = '';
+  var comprimentoMaximo = Math.max(palavra1.length, palavra2.length);
+
+  for (var i = 0; i < comprimentoMaximo; i++) {
+    if (i < palavra1.length) {
+      resultado += palavra1[i];
+    }
+    if (i < palavra2.length) {
+      resultado += palavra2[i];
+    }
+  }
+
+  return resultado;
+}

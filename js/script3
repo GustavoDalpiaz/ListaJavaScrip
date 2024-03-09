@@ -1,0 +1,19 @@
+function inverterNomes() {
+    // Obter os valores dos campos de texto
+    var nome1 = document.getElementById("name1").value;
+    var nome2 = document.getElementById("name2").value;
+    var nome3 = document.getElementById("name3").value;
+    var nome4 = document.getElementById("name4").value;
+    var nome5 = document.getElementById("name5").value;
+
+    // Armazenar os nomes em um array e inverter a ordem
+    var nomes = [nome1, nome2, nome3, nome4, nome5];
+    nomes.reverse();
+
+    // Preencher os campos de texto com os nomes invertidos
+    document.getElementById("name1").value = nomes[0];
+    document.getElementById("name2").value = nomes[1];
+    document.getElementById("name3").value = nomes[2];
+    document.getElementById("name4").value = nomes[3];
+    document.getElementById("name5").value = nomes[4];
+}

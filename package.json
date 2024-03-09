@@ -1,0 +1,23 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "Lista Exercicio",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoDalpiaz/ListaJavaScrip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GustavoDalpiaz/ListaJavaScrip/issues"
+  },
+  "homepage": "https://github.com/GustavoDalpiaz/ListaJavaScrip#readme",
+  "dependencies": {
+    "electron": "^29.1.1"
+  }
+}

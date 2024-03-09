@@ -1,0 +1,23 @@
+var banners = ["../imagens/banner1.png", "../imagens/banner2.png", "../imagens/banner3.png"];
+var bannerAtual = 0;
+var intervalId;
+
+function trocaBanner() {
+  bannerAtual = (bannerAtual + 1) % banners.length;
+  document.getElementById('imgBanner').src = banners[bannerAtual];
+}
+
+function toggleRotation() {
+  var pauseButton = document.getElementById('pauseButton');
+  if (intervalId) {
+    clearInterval(intervalId);
+    intervalId = null;
+    pauseButton.textContent = "Reproduzir";
+  } else {
+    intervalId = setInterval(trocaBanner, 4000);
+    pauseButton.textContent = "Pausar";
+  }
+}
+
+// Inicie a rotação automaticamente
+intervalId = setInterval(trocaBanner, 4000);
